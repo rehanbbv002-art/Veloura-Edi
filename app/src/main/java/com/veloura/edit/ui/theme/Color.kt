@@ -1,26 +1,17 @@
 package com.veloura.edit.ui.theme
 
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
-private val DarkColorScheme = darkColorScheme(
-    primary = VelouraColors.PrimaryViolet,
-    secondary = VelouraColors.CyanActive,
-    tertiary = VelouraColors.GoldWarning,
-    background = VelouraColors.SurfaceDark,
-    surface = VelouraColors.SurfaceContainerLow,
-    onPrimary = VelouraColors.TextPrimary,
-    onBackground = VelouraColors.TextPrimary,
-    onSurface = VelouraColors.TextPrimary
-)
-
-@Composable
-fun VelouraTheme(content: @Composable () -> Unit) {
-    MaterialTheme(
-        colorScheme = DarkColorScheme,
-        typography = VelouraTypography,
-        content = content
-    )
+object VelouraColors {
+    // Primary Colors
+    val PrimaryViolet = Color(0xFF6200EE) // Aap apna violet color code yahan badal sakte hain
+    val CyanActive = Color(0xFF03DAC6)
+    val GoldWarning = Color(0xFFFFB300)
+    
+    // Background & Surfaces
+    val SurfaceDark = Color(0xFF121212)
+    val SurfaceContainerLow = Color(0xFF1E1E1E)
+    
+    // Text Colors
+    val TextPrimary = Color(0xFFFFFFFF)
 }
-
